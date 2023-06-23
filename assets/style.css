@@ -4,15 +4,171 @@ body {
     background-color: black;
 }
 
+
 header {
     background-color: grey;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 header h1 {
     color: whitesmoke;
     background-color: darkorchid;
     font-size: 20px;
     font-weight: bold;
+}
+header a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+header nav {
+    margin: 10px;
+}
+header nav ul {
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+header nav ul li a {
+    font-weight: bold;
+    padding: 10px;
+    font-size: 16px;
+    margin: 20px 20px 0 0;
+}
+header nav ul li a:hover {
+    color: white;
+    background: blueviolet;
+    border-radius: 20px;
+}
+
+
+.main {
+    display: flex;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.main img {
+    height: 300px;
+}
+.main .motto {
+    font-size: 12px;
+    justify-content: end;
+    text-align: right;
+    color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+}
+.main.motto #motto-text {
+    font-size: 3px;
+}
+
+
+.about-me {
+    justify-content: start;
+    align-items: center;
+    padding-top: 40px;
+    display: flex;
+    min-height: 100%;
+}
+.about-me p {
+    border-left: 5px solid grey;
+    font-size: 18px;
+    padding-left: 45px;
+    width: 80%;
+    line-height: 2;
+}
+
+
+.my-work {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: grey;
+}
+.my-work h2 {
+    color: whitesmoke;
+}
+.projects-wrapper {
+    justify-content: center;
+    width: 70%;
+    height: 400px;
+    display: flex;
+}
+.projects-grid {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 12px;
+}
+.projects {
+    border: solid;
+    color: lightcoral;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-decoration: none;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+.projects:hover {
+    opacity: 1.0;
+}
+
+
+.title {
+    min-height: 100%;
+    text-align: start;
+    padding-right: 10px;
+    min-width: 20%;
+    max-width: 20%;
+}
+
+.title h2 {
+    font-size: 30px;
+}
+
+footer {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 35px;
+    margin-bottom: 30px;
+}
+footer ul {
+    justify-content: space-evenly;
+    align-content: center;
+    font-size: 25px;
+    font-weight: bolder;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+footer ul li {
+    font-weight: bold;
+}
+footer ul li a {
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+footer ul li a:hover {
+    color: aqua;
+    background: darkmagenta;
+    border-radius: 20px;
+}
+.content-wrapper {
+    justify-content: space-evenly;
+    width: 80%;
+    align-items: center;
+    display: flex;
+}
+#contact-list {
+    width: 70%;
 }
