@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: 'Courier New', Courier, monospace;
     color: whitesmoke;
@@ -16,6 +21,7 @@ header h1 {
     background-color: rgb(59, 118, 228);
     font-size: 30px;
     font-weight: bold;
+    padding-bottom: 30px;
 }
 header a {
     text-decoration: none;
@@ -25,7 +31,7 @@ header div {
     box-shadow: 5px 5px 10px 5px rgba(26, 0, 0, 0.5);
 }
 header nav {
-    margin: 10px;
+    margin: 20px;
 }
 header nav ul {
     justify-content: center;
@@ -95,12 +101,23 @@ header nav ul li a:hover {
 .my-work h2 {
     color: whitesmoke;
 }
+.project {
+    color: lightcoral;
+    border: solid;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-decoration: none;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+}
 .projects-grid {
-    width: 70%;
+    width: 80%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    gap: 12px;
+    gap: 10px;
 }
 .projects-wrapper {
     justify-content: center;
@@ -108,24 +125,13 @@ header nav ul li a:hover {
     height: 400px;
     display: flex;
 }
-.project {
-    border: solid;
-    color: lightcoral;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    text-decoration: none;
-    background-size: cover;
-    background-position: center;
-    opacity: 0.5;
-}
 .project:hover {
     opacity: 1.0;
 }
 .project-label {
     color: whitesmoke;
     background-color: lightgray;
-    padding: 5px;
+    padding: 15px;
 }
 .study{
     background-image: url("Images/prework.png")  ;
@@ -133,7 +139,15 @@ header nav ul li a:hover {
 }
 .horiseon{
     background-image: url("Images/horiseon.png");
-    background-position: 50% 15%;
+    background-position: 0% 15%;
+}
+.snippet{
+    background-image: url("Images/css.png");
+    background-position: 0% 0%;
+}
+.coming-soon{
+    background-image: url("Images/placeholder.png")  ;
+    background-position: 0% 0%;
 }
 
 .title {
@@ -143,7 +157,6 @@ header nav ul li a:hover {
     min-width: 20%;
     max-width: 20%;
 }
-
 .title h2 {
     font-size: 30px;
 }
@@ -187,4 +200,81 @@ footer ul li a:hover {
 }
 #contact-list {
     width: 70%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .main .motto {
+        font-size: 28px;
+        padding-right: 20px;
+    }
+    
+    .main .motto #motto-text {
+        font-size: 35px;
+    }
+
+    .title h2 {
+        font-size: 35px;
+    }
+
+    .about-me p {
+        font-size: 16px;
+        /*padding: 0 15px;*/
+        line-height: 1.6;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    header {
+        justify-content: center;
+        padding: 20px;
+    }
+    header nav ul {
+        min-height: 80px;
+    }
+    .main {
+        flex-direction: column;
+    }
+    .about-me {
+        flex-direction: column;
+    }
+    .title {
+        border-bottom: 5px solid var(--pop);
+        border-right: none;
+        text-align: center;
+        min-width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+    .about-me p {
+        font-size: 16px;
+        line-height: 1.6;
+        width: 100%;
+        padding: 15px;
+    }
+    .my-work {
+        flex-direction: column;
+        padding: 30px 0;
+    }
+    .projects-grid {
+        width: 80%;
+    }
+    .projects-grid-wrapper {
+        width: 100%;
+        padding: 10px;
+    }
+    footer {
+        flex-direction: column;
+    }
+    footer ul {
+        flex-direction: column;
+    }
+    .content-wrapper {
+        width: 100%;
+    }
+    footer ul li {
+        padding: 10px;
+        text-align: center;
+    }
+    
 }
