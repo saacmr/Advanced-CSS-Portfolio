@@ -13,13 +13,16 @@ header {
 }
 header h1 {
     color: whitesmoke;
-    background-color: darkorchid;
-    font-size: 20px;
+    background-color: rgb(59, 118, 228);
+    font-size: 30px;
     font-weight: bold;
 }
 header a {
     text-decoration: none;
     color: whitesmoke;
+}
+header div {
+    box-shadow: 5px 5px 10px 5px rgba(26, 0, 0, 0.5);
 }
 header nav {
     margin: 10px;
@@ -55,14 +58,14 @@ header nav ul li a:hover {
     height: 300px;
 }
 .main .motto {
+    color: whitesmoke;
     font-size: 12px;
     justify-content: end;
     text-align: right;
-    color: whitesmoke;
     display: flex;
     flex-wrap: wrap;
 }
-.main.motto #motto-text {
+.main .motto #motto-text {
     font-size: 3px;
 }
 
@@ -92,12 +95,6 @@ header nav ul li a:hover {
 .my-work h2 {
     color: whitesmoke;
 }
-.projects-wrapper {
-    justify-content: center;
-    width: 70%;
-    height: 400px;
-    display: flex;
-}
 .projects-grid {
     width: 70%;
     display: grid;
@@ -105,7 +102,13 @@ header nav ul li a:hover {
     grid-template-rows: repeat(4, 1fr);
     gap: 12px;
 }
-.projects {
+.projects-wrapper {
+    justify-content: center;
+    width: 70%;
+    height: 400px;
+    display: flex;
+}
+.project {
     border: solid;
     color: lightcoral;
     display: flex;
@@ -116,10 +119,22 @@ header nav ul li a:hover {
     background-position: center;
     opacity: 0.5;
 }
-.projects:hover {
+.project:hover {
     opacity: 1.0;
 }
-
+.project-label {
+    color: whitesmoke;
+    background-color: lightgray;
+    padding: 5px;
+}
+.study{
+    background-image: url("Images/prework.png")  ;
+    background-position: 0% 0%;
+}
+.horiseon{
+    background-image: url("Images/horiseon.png");
+    background-position: 50% 15%;
+}
 
 .title {
     min-height: 100%;
@@ -139,6 +154,7 @@ footer {
     flex-wrap: wrap;
     padding-top: 35px;
     margin-bottom: 30px;
+    
 }
 footer ul {
     justify-content: space-evenly;
