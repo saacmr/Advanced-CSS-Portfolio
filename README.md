@@ -1,6 +1,6 @@
 # Advanced-CSS-Portfolio
 
-##Description
+## Description
 An advanced css styled website portfolio.
 
 ## Acceptance Criteria
